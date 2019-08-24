@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { AnimalService } from "../animal.service";
+import { Router} from "@angular/router";
+import { MatTableDataSource } from '@angular/material';
+import { Animal } from "../animal.model";
+import { AnimalService } from '../animal.service';
 
 @Component({
   selector: 'component-stats',
@@ -8,12 +11,30 @@ import { AnimalService } from "../animal.service";
 })
 export class StatsComponent implements OnInit {
 
-  constructor(private animal: AnimalService) { }
+  animals: Animal[];
+  displayedColumns= ['species', 'count'];
 
-  ngOnInit() {
-    this.animal.getAnimals().subscribe((animals) => {
-      console.log(animals);
-    } )
+  constructor(private animalService: AnimalService) {
+    //this.animals.push({species: 'Cat', count: 10});
   }
 
+  ngOnInit() {
+    //this.animal.getAnimals().subscribe((animals) => {
+     // console.log(animals);
+    //} )
+    this.fetchAnimals();
+    this.animals.push({species: 'Cat', count: 10});
+    this.animals.push({species: 'Dog', count: 12});
+  }
+
+
+  fetchAnimals() {
+    this.animalService
+      .getAnimals()
+      .subscribe((data: Animal[]) => {
+        this.animals = data;
+        console.log('Data requested');
+        console.log(this.animals);
+      });
+  }
 }

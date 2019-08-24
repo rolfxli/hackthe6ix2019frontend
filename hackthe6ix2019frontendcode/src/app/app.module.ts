@@ -4,6 +4,11 @@ import { HttpClientModule } from '@angular/common/http';
 
 import {AnimalService} from "./animal.service";
 
+import { RouterModule, Routes } from '@angular/router';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatCardModule, MatDividerModule, MatTableModule, MatToolbarModule} from '@angular/material';
+
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LogonComponent } from './logon/logon.component';
@@ -42,7 +47,12 @@ import { NotfoundComponent } from './notfound/notfound.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
     HttpClientModule,
+    MatToolbarModule,
+    MatTableModule,
+    MatCardModule,
+    MatDividerModule
   ],
   providers: [AnimalService],
   bootstrap: [AppComponent]
