@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-latestimage',
+  selector: 'component-latestimage',
   templateUrl: './latestimage.component.html',
   styleUrls: ['./latestimage.component.scss']
 })
