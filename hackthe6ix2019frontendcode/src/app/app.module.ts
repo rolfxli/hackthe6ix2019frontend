@@ -10,6 +10,8 @@ import { LatestimageComponent } from './latestimage/latestimage.component';
 import { LogontextComponent } from './logon/logontext/logontext.component';
 import { ButtonComponent } from './button/button.component';
 import { InputfieldComponent } from './inputfield/inputfield.component';
+import { DashboardelementsComponent } from './dashboard/dashboardelements/dashboardelements.component';
+import { DashboardelementsrightComponent } from './dashboard/dashboardelementsright/dashboardelementsright.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { InputfieldComponent } from './inputfield/inputfield.component';
     LatestimageComponent,
     LogontextComponent,
     ButtonComponent,
-    InputfieldComponent
+    InputfieldComponent,
+    DashboardelementsComponent,
+    DashboardelementsrightComponent
   ],
   imports: [
     BrowserModule,

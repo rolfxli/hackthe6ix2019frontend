@@ -1,0 +1,9 @@
+@import '../../assets/utils';
+
+#component-dashboard {
+  .dashboard-row {
+    @include flex-center;
+    flex-direction: column;
+    color: black;
+  }
+}

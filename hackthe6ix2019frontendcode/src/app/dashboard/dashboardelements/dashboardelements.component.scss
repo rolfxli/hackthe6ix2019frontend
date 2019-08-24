@@ -1,0 +1,26 @@
+@import '../../../assets/utils';
+
+.component-dashboardelements {
+  text-align: center;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  padding: 1rem;
+  @include flex-center;
+  flex-direction: column;
+  color: black;
+
+  .dashboardelementLbutton {
+
+    display: flex;
+    margin-top: 1rem;
+
+    > * {
+      margin-left: 1rem;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+}
