@@ -4,6 +4,7 @@
   @include uTransition(all);
   padding: 0;
   background: transparent;
+  border-color: black;
   border-radius: 5px;
 
   a{
@@ -13,8 +14,8 @@
     padding-left: 0.75em;
     padding-right: 0.75em;
     padding-top: calc(0.375em - 1px);
-    color: #fefefe;
-    //color: black;
+    //color: #fefefe;
+    color: black;
   }
 
   &.is-outlined:hover a{

@@ -1,9 +1,25 @@
 @import '../../assets/utils';
 
 #component-dashboard {
+  text-align: center;
+  @include flex-center;
+  flex-direction: column;
+  overflow: auto;
+  //color: white;
+
   .dashboard-row {
-    @include flex-center;
-    flex-direction: column;
-    color: black;
+    display: flex;
+    vertical-align: center;
+    margin-top: 10rem;
+    > * {
+      margin-left: 1rem;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
   }
+
+//  .component-footer {
+  //  text-align: bottom;
+ // }
 }

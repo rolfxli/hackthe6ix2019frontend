@@ -12,6 +12,8 @@ import { ButtonComponent } from './button/button.component';
 import { InputfieldComponent } from './inputfield/inputfield.component';
 import { DashboardelementsComponent } from './dashboard/dashboardelements/dashboardelements.component';
 import { DashboardelementsrightComponent } from './dashboard/dashboardelementsright/dashboardelementsright.component';
+import { ButtonDarkComponent } from './button-dark/button-dark.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { DashboardelementsrightComponent } from './dashboard/dashboardelementsri
     ButtonComponent,
     InputfieldComponent,
     DashboardelementsComponent,
-    DashboardelementsrightComponent
+    DashboardelementsrightComponent,
+    ButtonDarkComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

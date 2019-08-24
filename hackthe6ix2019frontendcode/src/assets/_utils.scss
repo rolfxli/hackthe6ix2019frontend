@@ -12,6 +12,22 @@
   justify-content: center;
 }
 
+@mixin separator($color){
+  border-radius: 1rem;
+  border-width: 2px;
+  border-color: $color;
+  background-color: $color;
+  border-style: solid;
+}
+
+@mixin white-separator(){
+  @include separator(white);
+}
+
+@mixin black-separator(){
+  @include separator(black);
+}
+
 @keyframes fadein {
   from { opacity: 0; }
   to   { opacity: 1; }
