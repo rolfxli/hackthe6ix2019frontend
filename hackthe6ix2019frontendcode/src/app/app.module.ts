@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 
+import {AnimalService} from "./animal.service";
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LogonComponent } from './logon/logon.component';
@@ -42,7 +44,7 @@ import { NotfoundComponent } from './notfound/notfound.component';
     AppRoutingModule,
     HttpClientModule,
   ],
-  providers: [],
+  providers: [AnimalService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

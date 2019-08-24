@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AnimalService } from "../animal.service";
 
 @Component({
   selector: 'component-stats',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StatsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private animal: AnimalService) { }
 
   ngOnInit() {
+    this.animal.getAnimals().subscribe((animals) => {
+      console.log(animals);
+    } )
   }
 
 }
