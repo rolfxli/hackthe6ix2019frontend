@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'hackthe6ix2019frontendcode';
+  title = 'Farmer\'s Hand';
 }
