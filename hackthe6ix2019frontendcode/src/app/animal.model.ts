@@ -1,4 +1,4 @@
 export interface Animal {
-  species: string;
-  count: number;
+  species: String;
+  count: Number;
 }

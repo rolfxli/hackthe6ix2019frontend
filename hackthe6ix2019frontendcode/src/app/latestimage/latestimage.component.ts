@@ -15,7 +15,7 @@ export class LatestimageComponent implements OnInit {
   constructor(private urlService: UrlsService) { }
 
   ngOnInit() {
-    //this.fetchURL()
+    this.fetchURL()
     this.urls = [];
     //this.urls.push('https://archivedaddy.s3.us-east-2.amazonaws.com/zoo_test.jpg');
   }
@@ -24,7 +24,8 @@ export class LatestimageComponent implements OnInit {
     this.urlService
     .getURL()
       .subscribe((data: []) => {
-        this.picurl = 'https://archivedaddy.s3.us-east-2.amazonaws.com/' + data + '.jpg';
+        this.picurl = 'https://archivedaddy.s3.us-east-2.amazonaws.com/' + data;
+        //document.getElementById('latestImage').setAttribute( 'src', this.picurl);
         console.log('Data requested');
         console.log(this.urls);
       });

@@ -21,11 +21,14 @@ export class StatsComponent implements OnInit {
     //this.animal.getAnimals().subscribe((animals) => {
      // console.log(animals);
     //} )
-    //this.fetchAnimals();
     this.animals = [];
-    this.animals.push({species: 'Cat', count: 10});
-    this.animals.push({species: 'Dog', count: 12});
+    //this.fetchAnimals();
+
+    this.animals.push({species: 'Cat', count: 1});
+    this.animals.push({species: 'Dog', count: 3});
     this.animals.push({species: 'Fox', count: 2});
+    this.animals.push({species: 'Lizards', count: 4});
+    this.animals.push({species: 'Birds', count: 1});
   }
 
 

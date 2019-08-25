@@ -42,7 +42,7 @@ import { NotfoundComponent } from './notfound/notfound.component';
     FooterComponent,
     HeaderComponent,
     ImageheaderComponent,
-    NotfoundComponent
+    NotfoundComponent,
   ],
   imports: [
     BrowserModule,
