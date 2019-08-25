@@ -15,16 +15,17 @@ export class StatsComponent implements OnInit {
   displayedColumns= ['species', 'count'];
 
   constructor(private animalService: AnimalService) {
-    //this.animals.push({species: 'Cat', count: 10});
   }
 
   ngOnInit() {
     //this.animal.getAnimals().subscribe((animals) => {
      // console.log(animals);
     //} )
-    this.fetchAnimals();
+    //this.fetchAnimals();
+    this.animals = [];
     this.animals.push({species: 'Cat', count: 10});
     this.animals.push({species: 'Dog', count: 12});
+    this.animals.push({species: 'Fox', count: 2});
   }
 
 

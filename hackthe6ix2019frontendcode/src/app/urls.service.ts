@@ -5,13 +5,13 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 
-export class AnimalService {
+export class UrlsService {
 
   uri = 'http://localhost:4000';
 
   constructor(private http: HttpClient) { }
 
-  getAnimals() {
-    return this.http.get('${this.uri}/animals');
+  getURL() {
+    return this.http.get('${this.uri}/urls');
   }
 }
